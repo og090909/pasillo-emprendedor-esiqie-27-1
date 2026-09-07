@@ -6,7 +6,8 @@
   <title>Pasillo Emprendedor 27-1</title>
   <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0D2B1E; color: #E8EDE8; min-height: 100vh; padding: 1.5rem 1rem; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0D2B1E; color: #E8EDE8; min-height: 100vh; padding: 0 1rem 1.5rem; }
+.accent-bar { height: 6px; width: 100%; margin: 0 -1rem 1rem; }
 .container { max-width: 900px; margin: 0 auto; }
 h1 { font-size: 2.2rem; color: #52B788; text-align: center; margin-bottom: 0.2rem; }
 .sub { text-align: center; color: #95D5B2; margin-bottom: 1.5rem; font-size: 1.02rem; }
@@ -14,8 +15,8 @@ h1 { font-size: 2.2rem; color: #52B788; text-align: center; margin-bottom: 0.2re
 footer { text-align: center; color: #95D5B2; padding: 1.5rem 0 0; font-size: 0.83rem; }
 .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.75); display: none; align-items: center; justify-content: center; z-index: 100; }
 .modal-backdrop.open { display: flex; }
-.modal { background: #1B4332; border-radius: 16px; padding: 1.8rem; max-width: 500px; width: 92%; border: 1px solid #52B788; max-height: 92vh; overflow-y: auto; }
-.modal h2 { color: #52B788; font-size: 1.35rem; margin: 0 0 0.3rem; }
+.modal { background: #1B4332; border-radius: 16px; padding: 1.8rem; max-width: 500px; width: 92%; border: 2px solid #52B788; max-height: 92vh; overflow-y: auto; transition: border-color .3s; }
+.modal h2 { color: #52B788; font-size: 1.35rem; margin: 0 0 0.3rem; transition: color .3s; }
 .modal .id { color: #B7E4C7; font-size: 0.85rem; margin-bottom: 0.8rem; }
 .modal h3 { color: #95D5B2; font-size: 0.85rem; margin: 0.9rem 0 0.4rem; letter-spacing: 0.05em; }
 .modal .row { display: flex; justify-content: space-between; padding: 0.35rem 0; border-bottom: 1px solid #2D6A4F; }
@@ -32,9 +33,10 @@ input.password { background: #0D2B1E; border: 1px solid #2D6A4F; color: white; p
 </style>
 </head>
 <body>
+  <div class="accent-bar" id="accent-bar" style="background:#1565C0"></div>
   <div class="container">
     <h1>🌱 Pasillo Emprendedor 27-1</h1>
-    <p class="sub">IPN · ESIQIE · Septiembre 2026</p>
+    <p class="sub">IPN · ESIQIE · Septiembre 2026 · <span id="act-name" style="color:#1565C0;font-weight:700">ACCESORIOS</span></p>
     <div class="card">
       <p style="text-align:center">Cargando información del emprendedor…</p>
     </div>
@@ -66,6 +68,8 @@ input.password { background: #0D2B1E; border: 1px solid #2D6A4F; color: white; p
 
   <script>
 const PASSWORD = '0808';
+const ACTIVITY_COLOR = '#1565C0';
+const ACTIVITY_NAME = 'ACCESORIOS';
 let DATA = null;
 let EMBEDDED_ID = 'AR0451';
 let currentParticipant = null;
@@ -86,6 +90,18 @@ function openModal(codigo) {
   const p = DATA.find(x => x.codigo === codigo);
   if (!p) return;
   currentParticipant = p;
+  const col = ACTIVITY_COLOR;
+
+  // Barra superior (color de la actividad)
+  const bar = document.getElementById('accent-bar');
+  if (bar) bar.style.background = col;
+
+  // Modal: borde y titulo del color
+  const modalEl = document.querySelector('.modal');
+  if (modalEl) modalEl.style.borderColor = col;
+  const titleEl = document.getElementById('modal-title');
+  if (titleEl) titleEl.style.color = col;
+
   document.getElementById('modal-title').textContent = p.nombre;
   document.getElementById('modal-id').textContent = p.codigo + ' · ' + p.rol;
   document.getElementById('m-boleta').textContent = p.boleta_publica || '••••';

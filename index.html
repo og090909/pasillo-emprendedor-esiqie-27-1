@@ -35,7 +35,7 @@ h1 { font-size: 2.4rem; color: #52B788; text-align: center; margin-bottom: 0.2re
 footer { text-align: center; color: #95D5B2; padding: 1.5rem 0 0; font-size: 0.83rem; }
 .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.75); display: none; align-items: center; justify-content: center; z-index: 100; }
 .modal-backdrop.open { display: flex; }
-.modal { background: #1B4332; border-radius: 16px; padding: 1.8rem; max-width: 500px; width: 92%; border: 1px solid #52B788; max-height: 92vh; overflow-y: auto; }
+.modal { background: #1B4332; border: 2px solid #52B788; transition: border-color .3s;; border-radius: 16px; padding: 1.8rem; max-width: 500px; width: 92%; border: 1px solid #52B788; max-height: 92vh; overflow-y: auto; }
 .modal h2 { color: #52B788; font-size: 1.35rem; margin: 0 0 0.3rem; }
 .modal .id { color: #B7E4C7; font-size: 0.85rem; margin-bottom: 0.8rem; }
 .modal h3 { color: #95D5B2; font-size: 0.85rem; margin: 0.9rem 0 0.4rem; letter-spacing: 0.05em; }
@@ -97,6 +97,8 @@ let currentParticipant = null;
 
 const ACT_KEY = {'ALIMENTOS':'alimentos','ACCESORIOS':'accesorios','PAPELERIA':'papeleria','ROPA':'ropa','PRODUCTO DE BELLEZA':'belleza'};
 const state = { query: '', act: '', rol: '', esc: '' };
+const ACT_COLORS = {'ALIMENTOS':'#2E7D32','ACCESORIOS':'#1565C0','PAPELERIA':'#6A1B9A','ROPA':'#C62828','PRODUCTO DE BELLEZA':'#AD1457'};
+
 
 function renderFilters() {
   const acts = [...new Set(DATA.map(x => x.actividad))].sort();
@@ -144,6 +146,14 @@ function openModal(codigo) {
   const p = DATA.find(x => x.codigo === codigo);
   if (!p) return;
   currentParticipant = p;
+  const col = ACT_COLORS[p.actividad.toUpperCase()] || '#52B788';
+  const modalEl = document.querySelector('.modal');
+  if (modalEl) modalEl.style.borderColor = col;
+  const titleEl = document.getElementById('modal-title');
+  if (titleEl) titleEl.style.color = col;
+  const actEl = document.getElementById('m-actividad');
+  if (actEl) actEl.style.color = col;
+
   document.getElementById('modal-title').textContent = p.nombre;
   document.getElementById('modal-id').textContent = p.codigo + ' · ' + p.rol;
   document.getElementById('m-boleta').textContent = p.boleta_publica || '••••';
