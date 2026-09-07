@@ -1,0 +1,601 @@
+{
+  "gafetes": [
+    {
+      "codigo": "ALR0150",
+      "rol": "TITULAR",
+      "nombre": "Espinosa Acevedo Marco Antonio",
+      "boleta": 2023302450,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1sde25vKL-7RmJvJwPQJ-NkRYiSFSDK0T",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA0150",
+      "rol": "AUXILIAR",
+      "nombre": "Espinosa Acevedo Marco Antonio",
+      "boleta": 2023302450,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1iRcQLumjwr0od8SDyiDbBebqvpVs074m",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR0241",
+      "rol": "TITULAR",
+      "nombre": "Chavez Menchaca Yael",
+      "boleta": 2025302841,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "LUNES",
+      "drive": "https://drive.google.com/open?id=19xFXpl60C2JaErbv1e9pVUNDQpTSHbmj",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA0241",
+      "rol": "AUXILIAR",
+      "nombre": "Chavez Menchaca Yael",
+      "boleta": 2025302841,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "LUNES",
+      "drive": "https://drive.google.com/open?id=14HmNP1xDUTXVQFirYBvGrcmRnwB2Sp15",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR0305",
+      "rol": "TITULAR",
+      "nombre": "Arellano Méndez Blanca Mireya",
+      "boleta": 2022320605,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1MARBAfjnRq14b388y-YfFpHJs7k4NhgR",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA0316",
+      "rol": "AUXILIAR",
+      "nombre": "Sergio Federico Serrano",
+      "boleta": 2022320216,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1ScY-qFljaqZeXivephOP7myykPVWgapz",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR0498",
+      "rol": "TITULAR",
+      "nombre": "Martinez De La Cruz Amayrani",
+      "boleta": 2024320698,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1IMHvDNr0PHOuxLp_TMsW3y5OkGXY8tb8",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR0508",
+      "rol": "TITULAR",
+      "nombre": "Dominguez Ortiz Jaime Rafael",
+      "boleta": 2024380008,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "LUNES",
+      "drive": "https://drive.google.com/open?id=12uAiXxjKbaspwXaVnIvRuvLrYEPlQAxL",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA0451",
+      "rol": "AUXILIAR",
+      "nombre": "Avelar Rodriguez Ximena",
+      "boleta": 2025320251,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1hb8wfZ_lsi51btHjHA-MS-DbGIx7JfWO",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR0613",
+      "rol": "TITULAR",
+      "nombre": "Silvas Conde Juan Daniel",
+      "boleta": 2019320613,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "LUNES",
+      "drive": "https://drive.google.com/open?id=1aOIRu5yUi0FNyWRA027qvNC9JkLldctf",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA0574",
+      "rol": "AUXILIAR",
+      "nombre": "Vargas Guia Beatriz Ishtar",
+      "boleta": 2020320474,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "LUNES",
+      "drive": "https://drive.google.com/open?id=1JbGLFspvbkNhx4y0Trs-VBFVjLtCSFEi",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "AR0150",
+      "rol": "TITULAR",
+      "nombre": "Carapia Garcia Marco Antonio",
+      "boleta": 2026320250,
+      "escuela": "ESIQIE",
+      "actividad": "ACCESORIOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1jpf9HOVn8iYvrK_wgQOdoN0BvmGM7ddA",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR0766",
+      "rol": "TITULAR",
+      "nombre": "Sánchez García Eduardo Gael",
+      "boleta": 2025300266,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "JUEVES",
+      "drive": "https://drive.google.com/open?id=10KUIsHyisgDmtOl0R1ov4D0F9uFCBjmY",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA0671",
+      "rol": "AUXILIAR",
+      "nombre": "Suriel Jair Cruz Lugardo",
+      "boleta": 2025300271,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "JUEVES",
+      "drive": "https://drive.google.com/open?id=1OsYCYP7snWXTrAgkS01bd4MehuG5dksV",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR0888",
+      "rol": "TITULAR",
+      "nombre": "Ceron Sánchez Ximena Daphne",
+      "boleta": 2025320388,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1cFIMEvqjbf7xVW2rFxU1RBXmwYRrP8Vp",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA0788",
+      "rol": "AUXILIAR",
+      "nombre": "Ceron Sánchez Ximena Daphne",
+      "boleta": 2025320388,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1rvqu9KCWQYdSV7QWGw1AHlCUR6ccnxmY",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR0971",
+      "rol": "TITULAR",
+      "nombre": "Cruz Lugardo Suriel Jair",
+      "boleta": 2025300271,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "JUEVES",
+      "drive": "https://drive.google.com/open?id=14OY6ukZSzyCquLUpFuaGQhIp9A42kGQP",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA0871",
+      "rol": "AUXILIAR",
+      "nombre": "Cruz Lugardo Suriel Jair",
+      "boleta": 2025300271,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "JUEVES",
+      "drive": "https://drive.google.com/open?id=1tPhwDNXYfgDMst_u9SkKOewwTman2XDL",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR1072",
+      "rol": "TITULAR",
+      "nombre": "Ortega Pineda Josue Valentin",
+      "boleta": 2024320772,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1olgbTERctdSISHW0IVjeItk6P5J9ZweZ",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA0975",
+      "rol": "AUXILIAR",
+      "nombre": "Fuentes Luria Alondra",
+      "boleta": 2023320775,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1ScSha-q8iAHrZxkMv6PnZ5-CDv9bSMJ1",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR1149",
+      "rol": "TITULAR",
+      "nombre": "Hernandez Hernandez Cesar Antonio",
+      "boleta": 2024320649,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "JUEVES",
+      "drive": "https://drive.google.com/open?id=1R7FpgulYJrGX_1_214y7bfkwn6GsZDnq",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA1049",
+      "rol": "AUXILIAR",
+      "nombre": "Hernandez Hernandez Cesar Antonio",
+      "boleta": 2024320649,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "JUEVES",
+      "drive": "https://drive.google.com/open?id=1FhiUrAUnIdq826gR33xsrSljbAlUwWFW",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "PBR0121",
+      "rol": "TITULAR",
+      "nombre": "García Betancourt Ian Daniel",
+      "boleta": 2024300421,
+      "escuela": "ESIME Z",
+      "actividad": "PAPELERIA",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=134Q6EJa_o247-kX4_vz_Qobs1E7PBxum",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR1219",
+      "rol": "TITULAR",
+      "nombre": "Castillo Arias Owen Michel",
+      "boleta": 2023301719,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1O54a_oUmq-6CRwIn7vsMdZFPOUaosz--",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA1140",
+      "rol": "AUXILIAR",
+      "nombre": "Castrejon Salazar María Fernanda",
+      "boleta": 2023301640,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=176AuxHxAG_0Z4EKvyaQBuj7AjKjd9YhQ",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR1369",
+      "rol": "TITULAR",
+      "nombre": "Espinoza Morales Alejandro",
+      "boleta": 2023302369,
+      "escuela": "ESIME Z",
+      "actividad": "ALIMENTOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1Zv-DAlNCr8KyA07Yo-etCATauCeFOUnO",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA1251",
+      "rol": "AUXILIAR",
+      "nombre": "Cervantes Sánchez Luz Amellalli",
+      "boleta": 2024340051,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1KfXyd_BX7rEnKg52fzoafFphUfoiUjHE",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR1430",
+      "rol": "TITULAR",
+      "nombre": "Mercado Ariza Stephanie Danae",
+      "boleta": 2023320330,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1rg9XApFUIpjz5yzOZu0s17LttNb-XF--",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALA1365",
+      "rol": "AUXILIAR",
+      "nombre": "Alvarez Morales Mario Alberto",
+      "boleta": 2023320965,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1cmsW4t-nvUM5ROyY93V0ShzWdbAbwSTR",
+      "fuente": "PASILLO"
+    },
+    {
+      "codigo": "ALR1511",
+      "rol": "TITULAR",
+      "nombre": "López Millán Mauricio Francisco",
+      "boleta": 2022640511,
+      "escuela": "UPIITA",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=133PfbTke6w5zFc1GDj0qABUVO5JBptwr",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "ALR1615",
+      "rol": "TITULAR",
+      "nombre": "Hernández Juárez Lennin Alexis",
+      "boleta": 2024420615,
+      "escuela": "EST",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1hNFwuGEGP-RVQtMDm77UNxZ632PJ9Ga4",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "RPR0153",
+      "rol": "TITULAR",
+      "nombre": "Garzón Arceo Johana Valeria",
+      "boleta": 2022340053,
+      "escuela": "ESIT",
+      "actividad": "ROPA",
+      "dia": "MARTES",
+      "drive": "https://drive.google.com/open?id=1kPfJnkPxd0iKVXQkh9tAUEUkuTK-uact",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "ALR1714",
+      "rol": "TITULAR",
+      "nombre": "Marquez Eugenio Jesus Sebastian",
+      "boleta": 2026450014,
+      "escuela": "UPIEM",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1OwT5s2skQUiSTXQGXFlC4tPxh-SQIary",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "ALR1869",
+      "rol": "TITULAR",
+      "nombre": "De La Rosa Rosas Metsli Alessandra",
+      "boleta": 2024340169,
+      "escuela": "ESIT",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1ememxOdAuvoH7cneJygUl3m7CCiUI3DK",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "ALR1941",
+      "rol": "TITULAR",
+      "nombre": "Chavez Menchaca Yael",
+      "boleta": 2025302841,
+      "escuela": "ESIME",
+      "actividad": "ALIMENTOS",
+      "dia": "LUNES",
+      "drive": "https://drive.google.com/open?id=1vkbDYGj1wPJ3FeSYH4M1t1D42J1IPHjH",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "ALR2097",
+      "rol": "TITULAR",
+      "nombre": "Ramirez Perez Jose Luis",
+      "boleta": 2025320297,
+      "escuela": "ESIQIE",
+      "actividad": "ALIMENTOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1lwpruRZydohariE4seHVz_QH7C65FMCG",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "ALR2116",
+      "rol": "TITULAR",
+      "nombre": "Rodriguez Garcia Ricardo Zabdiel",
+      "boleta": 2026310316,
+      "escuela": "ESIA",
+      "actividad": "ALIMENTOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1kejc9JCmXRD4pVNMP3lk8FZVs_aytMwe",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "AR0293",
+      "rol": "TITULAR",
+      "nombre": "Palomo Nieves David",
+      "boleta": 2023340193,
+      "escuela": "ESIT",
+      "actividad": "ACCESORIOS",
+      "dia": "VIERNES",
+      "drive": "https://drive.google.com/open?id=1k5ZC-3EENGg9H7rEN7bZgV7RnGAWwZlF",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "AR0311",
+      "rol": "TITULAR",
+      "nombre": "Guzman Domínguez Erick",
+      "boleta": 2020311611,
+      "escuela": "Esia zacatenco",
+      "actividad": "ACCESORIOS",
+      "dia": "JUEVES",
+      "drive": "https://drive.google.com/open?id=1TgT1O1nu9q4YRzp4jZBpwMfWc4aGPpa9",
+      "fuente": "EXTERNOS"
+    },
+    {
+      "codigo": "AR0451",
+      "rol": "TITULAR",
+      "nombre": "Cervantes Sánchez Luz Amellalli",
+      "boleta": 2024340051,
+      "escuela": "ESIT",
+      "actividad": "ACCESORIOS",
+      "dia": "MIERCOLES",
+      "drive": "https://drive.google.com/open?id=1Fct5PT0gFzImh5y36X4_ZfvwwDrK7YZ6",
+      "fuente": "EXTERNOS"
+    }
+  ],
+  "invalidos_pasillo": [
+    {
+      "fila_excel": 18,
+      "timestamp": "",
+      "email": "Castillo Arias Owen Michel",
+      "titular": {
+        "nombre": "Castillo Arias Owen Michel",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": ""
+      },
+      "auxiliar": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": ""
+      },
+      "invalido_titular": true,
+      "invalido_auxiliar": true,
+      "fuente": "PASILLO"
+    }
+  ],
+  "invalidos_externos": [
+    {
+      "fila_excel": 13,
+      "timestamp": "",
+      "email": "",
+      "titular": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": "",
+        "narrativa": ""
+      },
+      "auxiliar": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": ""
+      },
+      "invalido_titular": false,
+      "invalido_auxiliar": false,
+      "fuente": "EXTERNOS"
+    },
+    {
+      "fila_excel": 14,
+      "timestamp": "",
+      "email": "Garzón Arceo Johana Valeria",
+      "titular": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": "",
+        "narrativa": ""
+      },
+      "auxiliar": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": ""
+      },
+      "invalido_titular": true,
+      "invalido_auxiliar": false,
+      "fuente": "EXTERNOS"
+    },
+    {
+      "fila_excel": 15,
+      "timestamp": "",
+      "email": "Guzman Domínguez Erick",
+      "titular": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": "",
+        "narrativa": ""
+      },
+      "auxiliar": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": ""
+      },
+      "invalido_titular": false,
+      "invalido_auxiliar": false,
+      "fuente": "EXTERNOS"
+    },
+    {
+      "fila_excel": 16,
+      "timestamp": "",
+      "email": "Hernández Juárez Lennin Alexis",
+      "titular": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": "",
+        "narrativa": ""
+      },
+      "auxiliar": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": ""
+      },
+      "invalido_titular": true,
+      "invalido_auxiliar": false,
+      "fuente": "EXTERNOS"
+    },
+    {
+      "fila_excel": 17,
+      "timestamp": "",
+      "email": "Chavez Menchaca Yael",
+      "titular": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": "",
+        "narrativa": ""
+      },
+      "auxiliar": {
+        "nombre": "",
+        "boleta": null,
+        "escuela": "",
+        "actividad": "",
+        "dia": "",
+        "drive": ""
+      },
+      "invalido_titular": false,
+      "invalido_auxiliar": false,
+      "fuente": "EXTERNOS"
+    }
+  ],
+  "total_pasillo_original": 17,
+  "total_externos_original": 16,
+  "total_validos": 27,
+  "total_gafetes_con_auxiliares": 40
+}
