@@ -79,9 +79,9 @@ async function loadData() {
     const res = await fetch('https://og090909.github.io/pasillo-emprendedor-esiqie-27-1/participantes.json');
     DATA = await res.json();
     if (QR_TARGET_ID) {
-      const found = DATA.gafetes.find(x => x.id === QR_TARGET_ID);
+      const found = DATA.gafetes.find(x => x.codigo === QR_TARGET_ID);
       if (found) {
-        setTimeout(function() { openModal(found.id); }, 50);
+        setTimeout(function() { openModal(found.codigo); }, 50);
       }
     }
   } catch (err) {
@@ -90,7 +90,7 @@ async function loadData() {
 }
 
 function openModal(id) {
-  const p = DATA.gafetes.find(x => x.id === id);
+  const p = DATA.gafetes.find(x => x.codigo === id);
   if (!p) return;
   currentParticipant = p;
   document.getElementById('modal-title').textContent = p.nombre;
