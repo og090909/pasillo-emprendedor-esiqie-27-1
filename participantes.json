@@ -12,7 +12,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 22,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2023****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA0150",
@@ -26,7 +28,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 22,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2023****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR0241",
@@ -40,7 +44,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA0241",
@@ -54,7 +60,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR0305",
@@ -68,7 +76,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 23,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2022****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA0316",
@@ -82,7 +92,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 23,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2022****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR0498",
@@ -96,7 +108,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR0508",
@@ -110,7 +124,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA0451",
@@ -124,7 +140,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR0613",
@@ -138,7 +156,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 26,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2019****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA0574",
@@ -152,7 +172,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 25,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2020****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "AR0150",
@@ -166,7 +188,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 19,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2026****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR0766",
@@ -180,7 +204,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA0671",
@@ -194,7 +220,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR0888",
@@ -208,7 +236,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA0788",
@@ -222,7 +252,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR0971",
@@ -236,7 +268,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA0871",
@@ -250,7 +284,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1072",
@@ -264,7 +300,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA0975",
@@ -278,7 +316,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 22,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2023****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1149",
@@ -292,7 +332,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA1049",
@@ -306,7 +348,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "PBR0121",
@@ -320,7 +364,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1219",
@@ -334,7 +380,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 22,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2023****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA1140",
@@ -348,7 +396,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 22,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2023****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1369",
@@ -362,7 +412,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 22,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2023****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA1251",
@@ -376,7 +428,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1430",
@@ -390,7 +444,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 22,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2023****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALA1365",
@@ -404,7 +460,9 @@
       "fuente": "PASILLO",
       "edad_ingreso": 22,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2023****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1511",
@@ -418,7 +476,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 23,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2022****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1615",
@@ -432,7 +492,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "RPR0153",
@@ -446,7 +508,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 23,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2022****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1714",
@@ -460,7 +524,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 19,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2026****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1869",
@@ -474,7 +540,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR1941",
@@ -488,7 +556,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR2097",
@@ -502,7 +572,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 20,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2025****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "ALR2116",
@@ -516,7 +588,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 19,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2026****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "AR0293",
@@ -530,7 +604,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 22,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2023****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "AR0311",
@@ -544,7 +620,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 25,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2020****",
+      "escuela_publica": "••••"
     },
     {
       "codigo": "AR0451",
@@ -558,7 +636,9 @@
       "fuente": "EXTERNOS",
       "edad_ingreso": 21,
       "email": "",
-      "equipo": ""
+      "equipo": "",
+      "boleta_publica": "2024****",
+      "escuela_publica": "••••"
     }
   ],
   "invalidos_pasillo": [

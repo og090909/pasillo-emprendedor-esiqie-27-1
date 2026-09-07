@@ -6,108 +6,155 @@
   <title>Pasillo Emprendedor 27-1</title>
   <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0D2B1E; color: #E8EDE8; min-height: 100vh; padding: 2rem 1rem; }
-.container { max-width: 1100px; margin: 0 auto; }
-h1 { font-size: 2.5rem; color: #52B788; text-align: center; margin-bottom: 0.5rem; }
-h2 { color: #95D5B2; margin: 1.5rem 0 0.8rem; font-size: 1.1rem; letter-spacing: 0.05em; }
-.sub { text-align: center; color: #95D5B2; margin-bottom: 2rem; font-size: 1.05rem; }
-.card { background: #1B4332; border: 1px solid #2D6A4F; border-radius: 12px; padding: 1.5rem; }
-.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: none; align-items: center; justify-content: center; z-index: 100; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0D2B1E; color: #E8EDE8; min-height: 100vh; padding: 1.5rem 1rem; }
+.container { max-width: 1200px; margin: 0 auto; }
+h1 { font-size: 2.4rem; color: #52B788; text-align: center; margin-bottom: 0.2rem; }
+.sub { text-align: center; color: #95D5B2; margin-bottom: 1.2rem; font-size: 1.05rem; }
+.toolbar { background: #1B4332; padding: 0.9rem 1.2rem; border-radius: 12px; margin-bottom: 1.2rem; display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap; border: 1px solid #2D6A4F; }
+.toolbar input[type=text] { background: #0D2B1E; border: 1px solid #2D6A4F; color: white; padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.95rem; flex: 1; min-width: 200px; }
+.toolbar input::placeholder { color: #74C69D; }
+.toolbar select { background: #0D2B1E; color: white; border: 1px solid #2D6A4F; padding: 0.55rem 0.8rem; border-radius: 8px; font-size: 0.9rem; }
+.toolbar label { color: #95D5B2; font-size: 0.82rem; display: flex; align-items: center; gap: 0.4rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.9rem; }
+.card { background: #1B4332; border: 1px solid #2D6A4F; border-radius: 12px; padding: 1rem; cursor: pointer; transition: transform .12s, border-color .12s; }
+.card:hover { transform: translateY(-2px); border-color: #52B788; }
+.card .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; }
+.card .codigo { color: #52B788; font-weight: 700; font-size: 0.9rem; font-family: 'Consolas', monospace; }
+.card .rol { font-size: 0.68rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 6px; }
+.card .rol.TITULAR { background: #1565C0; color: white; }
+.card .rol.AUXILIAR { background: #6A1B9A; color: white; }
+.card .nombre { color: white; font-size: 1.02rem; font-weight: 600; margin-bottom: 0.3rem; }
+.card .meta { color: #95D5B2; font-size: 0.8rem; }
+.card .act-badge { display: inline-block; font-size: 0.75rem; font-weight: 700; padding: 0.12rem 0.6rem; border-radius: 20px; margin-top: 0.5rem; }
+.act-alimentos { background: #2E7D32; color: white; }
+.act-accesorios { background: #1565C0; color: white; }
+.act-papeleria { background: #6A1B9A; color: white; }
+.act-ropa { background: #C62828; color: white; }
+.act-belleza { background: #AD1457; color: white; }
+.empty { grid-column: 1/-1; text-align: center; padding: 3rem; color: #95D5B2; }
+footer { text-align: center; color: #95D5B2; padding: 1.5rem 0 0; font-size: 0.83rem; }
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.75); display: none; align-items: center; justify-content: center; z-index: 100; }
 .modal-backdrop.open { display: flex; }
-.modal { background: #1B4332; border-radius: 16px; padding: 2rem; max-width: 480px; width: 90%; border: 1px solid #52B788; }
-.modal h2 { color: #52B788; font-size: 1.4rem; margin: 0 0 0.5rem; }
-.modal h3 { color: #95D5B2; font-size: 0.9rem; margin: 1rem 0 0.5rem; letter-spacing: 0.05em; }
-.modal .id { color: #B7E4C7; font-size: 0.85rem; margin-bottom: 1rem; }
-.modal .row { display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid #2D6A4F; }
+.modal { background: #1B4332; border-radius: 16px; padding: 1.8rem; max-width: 500px; width: 92%; border: 1px solid #52B788; max-height: 92vh; overflow-y: auto; }
+.modal h2 { color: #52B788; font-size: 1.35rem; margin: 0 0 0.3rem; }
+.modal .id { color: #B7E4C7; font-size: 0.85rem; margin-bottom: 0.8rem; }
+.modal h3 { color: #95D5B2; font-size: 0.85rem; margin: 0.9rem 0 0.4rem; letter-spacing: 0.05em; }
+.modal .row { display: flex; justify-content: space-between; padding: 0.35rem 0; border-bottom: 1px solid #2D6A4F; }
 .modal .row .label { color: #95D5B2; font-size: 0.85rem; }
 .modal .row .value { color: #E8EDE8; font-size: 0.85rem; font-weight: 500; text-align: right; }
-.modal .sensitive { background: #2D1B1B; padding: 0.8rem; border-radius: 8px; margin-top: 0.5rem; }
+.modal .sensitive { background: #2D1B1B; padding: 0.8rem; border-radius: 8px; margin-top: 0.3rem; }
 .modal .sensitive.locked { color: #95D5B2; font-style: italic; }
 .btn { background: #52B788; color: #0D2B1E; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.9rem; }
 .btn:hover { background: #74C69D; }
-.modal .close { background: transparent; color: #95D5B2; border: 1px solid #2D6A4F; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; float: right; }
-input.password { background: #0D2B1E; border: 1px solid #2D6A4F; color: white; padding: 0.5rem; border-radius: 6px; width: 100%; margin: 0.5rem 0; }
-.lock-icon { color: #B7E4C7; margin-right: 0.5rem; }
+.modal .close { background: transparent; color: #95D5B2; border: 1px solid #2D6A4F; padding: 0.35rem 0.75rem; border-radius: 6px; cursor: pointer; float: right; font-size: 0.8rem; }
+input.password { background: #0D2B1E; border: 1px solid #2D6A4F; color: white; padding: 0.5rem; border-radius: 6px; width: 100%; margin: 0.5rem 0; box-sizing: border-box; }
+.lock-icon { margin-right: 0.4rem; }
+.qr-link { display: inline-block; margin-top: 0.7rem; padding: 0.4rem 0.9rem; background: #2D6A4F; color: #B7E4C7; border-radius: 6px; text-decoration: none; font-size: 0.8rem; }
 </style>
 </head>
 <body>
   <div class="container">
-    <h1>Pasillo Emprendedor 27-1</h1>
-    <p class="sub">IPN - ESIQIE - Septiembre 2026</p>
-    <h2>Cargando informacion del emprendedor...</h2>
+    <h1>🌱 Pasillo Emprendedor 27-1</h1>
+    <p class="sub">IPN · ESIQIE · Septiembre 2026</p>
+    <h2>Cargando información del emprendedor...</h2>
     <div class="card">
-      <p>Esta pagina se abrio desde un QR. La informacion detallada aparecera automaticamente.</p>
+      <p>Esta página se abrió desde un QR. La información aparecerá automáticamente.</p>
     </div>
   </div>
 
-  <div class="modal-backdrop" id="modal">
+  <div class="modal-backdrop">
     <div class="modal">
       <button class="close" onclick="closeModal()">Cerrar</button>
       <h2 id="modal-title">Cargando...</h2>
       <div class="id" id="modal-id"></div>
       <h3>IDENTIDAD</h3>
       <div class="row"><span class="label">Boleta:</span><span class="value" id="m-boleta"></span></div>
-      <div class="row"><span class="label">Edad de ingreso:</span><span class="value" id="m-edad"></span></div>
-      <div class="row"><span class="label">Rol:</span><span class="value" id="m-rol"></span></div>
       <div class="row"><span class="label">Escuela:</span><span class="value" id="m-escuela"></span></div>
       <h3>PASILLO</h3>
       <div class="row"><span class="label">Actividad:</span><span class="value" id="m-actividad"></span></div>
-      <div class="row"><span class="label">Dia:</span><span class="value" id="m-dia"></span></div>
+      <div class="row"><span class="label">Día:</span><span class="value" id="m-dia"></span></div>
       <div class="row"><span class="label">Fuente:</span><span class="value" id="m-fuente"></span></div>
       <h3>DATOS SENSIBLES</h3>
       <div class="sensitive locked" id="sensitive-zone">
-        <span class="lock-icon">&#128274;</span> Datos sensibles protegidos. Ingresa la contrasena para verlos.
+        <span class="lock-icon">🔒</span> La boleta completa y la escuela requieren el código de acceso.
       </div>
-      <div style="margin-top:0.8rem">
-        <input type="password" id="pwd-input" class="password" placeholder="Contrasena de organizador" />
+      <div>
+        <input type="password" id="pwd-input" class="password" placeholder="Código de acceso" />
         <button class="btn" onclick="tryUnlock()" style="width:100%">Desbloquear</button>
       </div>
     </div>
   </div>
-  <script>
-const EMBEDDED_ID = 'ALR0498';
-const QR_TARGET_ID = EMBEDDED_ID;
-const PASSWORD = '0808';
 
+  <script>
+const PASSWORD = '0808';
 let DATA = null;
 let currentParticipant = null;
 
-async function loadData() {
-  try {
-    const res = await fetch('https://og090909.github.io/pasillo-emprendedor-esiqie-27-1/participantes.json');
-    DATA = await res.json();
-    if (QR_TARGET_ID) {
-      const found = DATA.gafetes.find(x => x.codigo === QR_TARGET_ID);
-      if (found) {
-        setTimeout(function() { openModal(found.codigo); }, 50);
-      }
-    }
-  } catch (err) {
-    console.error('Error:', err);
-  }
+const ACT_KEY = {'ALIMENTOS':'alimentos','ACCESORIOS':'accesorios','PAPELERIA':'papeleria','ROPA':'ropa','PRODUCTO DE BELLEZA':'belleza'};
+const state = { query: '', act: '', rol: '', esc: '' };
+
+function renderFilters() {
+  const acts = [...new Set(DATA.map(x => x.actividad))].sort();
+  const escsHide = ['ESIQIE','ESIME Z','ESIME','ESIT','EST','UPIITA','UPIEM','ESIA'];
+  const rols = [...new Set(DATA.map(x => x.rol))].sort();
+  const selAct = document.getElementById('f-act');
+  const selEsc = document.getElementById('f-esc');
+  const selRol = document.getElementById('f-rol');
+  acts.forEach(a => { const o = document.createElement('option'); o.value = a; o.textContent = a; selAct.appendChild(o); });
+  const esc_public = [...new Set(DATA.map(x => x.escuela))].sort();
+  esc_public.forEach(e => { const o = document.createElement('option'); o.value = e; o.textContent = e; selEsc.appendChild(o); });
+  rols.forEach(r => { const o = document.createElement('option'); o.value = r; o.textContent = r; selRol.appendChild(o); });
 }
 
-function openModal(id) {
-  const p = DATA.gafetes.find(x => x.codigo === id);
+function actClass(act) { return 'act-' + (ACT_KEY[act.toUpperCase()] || 'alimentos'); }
+
+function render() {
+  const q = state.query.toLowerCase();
+  const filtered = DATA.filter(p => {
+    const hay = `${p.codigo} ${p.nombre} ${p.boleta} ${p.actividad} ${p.rol} ${p.dia}`.toLowerCase();
+    if (q && !hay.includes(q)) return false;
+    if (state.act && p.actividad !== state.act) return false;
+    if (state.esc && p.escuela !== state.esc) return false;
+    if (state.rol && p.rol !== state.rol) return false;
+    return true;
+  });
+  const grid = document.getElementById('grid');
+  const meta = document.getElementById('results-meta');
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="empty">No hay coincidencias.</div>';
+    meta.textContent = 'Mostrando 0 de ' + DATA.length;
+    return;
+  }
+  meta.textContent = 'Mostrando ' + filtered.length + ' de ' + DATA.length + ' participantes';
+  grid.innerHTML = filtered.map(p => `
+    <div class="card" onclick="openModal('${p.codigo}')">
+      <div class="top"><span class="codigo">${p.codigo}</span><span class="rol ${p.rol === 'TITULAR' ? 'TITULAR' : 'AUXILIAR'}">${p.rol}</span></div>
+      <div class="nombre">${p.nombre}</div>
+      <div class="meta">${p.boleta_publica || ''} · ${p.actividad} · ${p.dia}</div>
+      <span class="act-badge ${actClass(p.actividad)}">${p.actividad}</span>
+    </div>`).join('');
+}
+
+function openModal(codigo) {
+  const p = DATA.find(x => x.codigo === codigo);
   if (!p) return;
   currentParticipant = p;
   document.getElementById('modal-title').textContent = p.nombre;
-  document.getElementById('modal-id').textContent = p.id + ' - ' + p.escuela + ' - ' + p.rol;
-  document.getElementById('m-boleta').textContent = p.boleta;
-  document.getElementById('m-edad').textContent = p.edad_ingreso || '-';
-  document.getElementById('m-rol').textContent = p.rol;
-  document.getElementById('m-escuela').textContent = p.escuela;
+  document.getElementById('modal-id').textContent = p.codigo + ' · ' + p.rol;
+  document.getElementById('m-boleta').textContent = p.boleta_publica || '••••';
+  document.getElementById('m-escuela').textContent = '••••';
   document.getElementById('m-actividad').textContent = p.actividad;
   document.getElementById('m-dia').textContent = p.dia;
   document.getElementById('m-fuente').textContent = p.fuente;
-  const sensitiveDiv = document.getElementById('sensitive-zone');
-  sensitiveDiv.className = 'sensitive locked';
-  sensitiveDiv.innerHTML = '<span class="lock-icon">&#128274;</span> Datos sensibles protegidos. Ingresa la contrasena para verlos.';
-  document.getElementById('modal').classList.add('open');
+  const sz = document.getElementById('sensitive-zone');
+  sz.className = 'sensitive locked';
+  sz.innerHTML = '<span class="lock-icon">🔒</span> La boleta completa y la escuela requieren el código de acceso.';
+  document.getElementById('pwd-input').value = '';
+  document.querySelector('.modal-backdrop').classList.add('open');
 }
 
 function closeModal() {
-  document.getElementById('modal').classList.remove('open');
+  document.querySelector('.modal-backdrop').classList.remove('open');
   currentParticipant = null;
 }
 
@@ -115,25 +162,42 @@ function tryUnlock() {
   const input = document.getElementById('pwd-input').value;
   if (input === PASSWORD) {
     const p = currentParticipant;
-    const sensitiveDiv = document.getElementById('sensitive-zone');
-    sensitiveDiv.className = 'sensitive';
-    let html = '<strong>OK Acceso concedido</strong><br><br>';
-    if (p.email) html += '<div class="row"><span class="label">Email:</span><span class="value">' + p.email + '</span></div>';
-    if (p.drive) html += '<a href="' + p.drive + '" target="_blank" class="btn" style="display:inline-block;margin-top:0.8rem;text-decoration:none">&#128196; Abrir Tira SAES (Drive)</a>';
-    sensitiveDiv.innerHTML = html;
+    document.getElementById('m-boleta').textContent = p.boleta;
+    document.getElementById('m-escuela').textContent = p.escuela;
+    const sz = document.getElementById('sensitive-zone');
+    sz.className = 'sensitive';
+    let html = '<strong>✅ Acceso concedido</strong><br><br>';
+    if (p.drive) html += '<a href="' + p.drive + '" target="_blank" class="qr-link">📄 Abrir Tira SAES (Drive)</a>';
+    sz.innerHTML = html;
   } else {
-    alert('Contrasena incorrecta');
+    alert('Código incorrecto');
   }
 }
 
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeModal();
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.querySelector('.modal-backdrop').addEventListener('click', e => {
+  if (e.target.classList.contains('modal-backdrop')) closeModal();
 });
 
-document.getElementById('modal').addEventListener('click', function(e) {
-  if (e.target.id === 'modal') closeModal();
-});
+document.getElementById('search-input').addEventListener('input', e => { state.query = e.target.value; render(); });
+document.getElementById('f-act').addEventListener('change', e => { state.act = e.target.value; render(); });
+document.getElementById('f-esc').addEventListener('change', e => { state.esc = e.target.value; render(); });
+document.getElementById('f-rol').addEventListener('change', e => { state.rol = e.target.value; render(); });
 
+renderFilters();
+render();
+
+
+async function loadData() {
+  try {
+    const res = await fetch('https://og090909.github.io/pasillo-emprendedor-esiqie-27-1/participantes.json');
+    DATA = await res.json();
+    DATA = DATA.gafetes || [];
+    const found = DATA.find(x => x.codigo === EMBEDDED_ID);
+    if (found) setTimeout(function() { openModal(found.codigo); }, 50);
+  } catch (err) { console.error('Error:', err); }
+}
+const EMBEDDED_ID = 'ALR0498';
 loadData();
 </script>
 </body>
