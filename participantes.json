@@ -9,7 +9,10 @@
       "actividad": "ALIMENTOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1sde25vKL-7RmJvJwPQJ-NkRYiSFSDK0T",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 22,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA0150",
@@ -20,7 +23,10 @@
       "actividad": "ALIMENTOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1iRcQLumjwr0od8SDyiDbBebqvpVs074m",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 22,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR0241",
@@ -31,7 +37,10 @@
       "actividad": "ALIMENTOS",
       "dia": "LUNES",
       "drive": "https://drive.google.com/open?id=19xFXpl60C2JaErbv1e9pVUNDQpTSHbmj",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA0241",
@@ -42,7 +51,10 @@
       "actividad": "ALIMENTOS",
       "dia": "LUNES",
       "drive": "https://drive.google.com/open?id=14HmNP1xDUTXVQFirYBvGrcmRnwB2Sp15",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR0305",
@@ -53,7 +65,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1MARBAfjnRq14b388y-YfFpHJs7k4NhgR",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 23,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA0316",
@@ -64,7 +79,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1ScY-qFljaqZeXivephOP7myykPVWgapz",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 23,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR0498",
@@ -75,7 +93,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1IMHvDNr0PHOuxLp_TMsW3y5OkGXY8tb8",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR0508",
@@ -86,7 +107,10 @@
       "actividad": "ALIMENTOS",
       "dia": "LUNES",
       "drive": "https://drive.google.com/open?id=12uAiXxjKbaspwXaVnIvRuvLrYEPlQAxL",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA0451",
@@ -97,7 +121,10 @@
       "actividad": "ALIMENTOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1hb8wfZ_lsi51btHjHA-MS-DbGIx7JfWO",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR0613",
@@ -108,7 +135,10 @@
       "actividad": "ALIMENTOS",
       "dia": "LUNES",
       "drive": "https://drive.google.com/open?id=1aOIRu5yUi0FNyWRA027qvNC9JkLldctf",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 26,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA0574",
@@ -119,7 +149,10 @@
       "actividad": "ALIMENTOS",
       "dia": "LUNES",
       "drive": "https://drive.google.com/open?id=1JbGLFspvbkNhx4y0Trs-VBFVjLtCSFEi",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 25,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "AR0150",
@@ -130,7 +163,10 @@
       "actividad": "ACCESORIOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1jpf9HOVn8iYvrK_wgQOdoN0BvmGM7ddA",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 19,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR0766",
@@ -141,7 +177,10 @@
       "actividad": "ALIMENTOS",
       "dia": "JUEVES",
       "drive": "https://drive.google.com/open?id=10KUIsHyisgDmtOl0R1ov4D0F9uFCBjmY",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA0671",
@@ -152,7 +191,10 @@
       "actividad": "ALIMENTOS",
       "dia": "JUEVES",
       "drive": "https://drive.google.com/open?id=1OsYCYP7snWXTrAgkS01bd4MehuG5dksV",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR0888",
@@ -163,7 +205,10 @@
       "actividad": "ALIMENTOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1cFIMEvqjbf7xVW2rFxU1RBXmwYRrP8Vp",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA0788",
@@ -174,7 +219,10 @@
       "actividad": "ALIMENTOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1rvqu9KCWQYdSV7QWGw1AHlCUR6ccnxmY",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR0971",
@@ -185,7 +233,10 @@
       "actividad": "ALIMENTOS",
       "dia": "JUEVES",
       "drive": "https://drive.google.com/open?id=14OY6ukZSzyCquLUpFuaGQhIp9A42kGQP",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA0871",
@@ -196,7 +247,10 @@
       "actividad": "ALIMENTOS",
       "dia": "JUEVES",
       "drive": "https://drive.google.com/open?id=1tPhwDNXYfgDMst_u9SkKOewwTman2XDL",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1072",
@@ -207,7 +261,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1olgbTERctdSISHW0IVjeItk6P5J9ZweZ",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA0975",
@@ -218,7 +275,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1ScSha-q8iAHrZxkMv6PnZ5-CDv9bSMJ1",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 22,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1149",
@@ -229,7 +289,10 @@
       "actividad": "ALIMENTOS",
       "dia": "JUEVES",
       "drive": "https://drive.google.com/open?id=1R7FpgulYJrGX_1_214y7bfkwn6GsZDnq",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA1049",
@@ -240,7 +303,10 @@
       "actividad": "ALIMENTOS",
       "dia": "JUEVES",
       "drive": "https://drive.google.com/open?id=1FhiUrAUnIdq826gR33xsrSljbAlUwWFW",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "PBR0121",
@@ -251,7 +317,10 @@
       "actividad": "PAPELERIA",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=134Q6EJa_o247-kX4_vz_Qobs1E7PBxum",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1219",
@@ -262,7 +331,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1O54a_oUmq-6CRwIn7vsMdZFPOUaosz--",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 22,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA1140",
@@ -273,7 +345,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=176AuxHxAG_0Z4EKvyaQBuj7AjKjd9YhQ",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 22,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1369",
@@ -284,7 +359,10 @@
       "actividad": "ALIMENTOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1Zv-DAlNCr8KyA07Yo-etCATauCeFOUnO",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 22,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA1251",
@@ -295,7 +373,10 @@
       "actividad": "ALIMENTOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1KfXyd_BX7rEnKg52fzoafFphUfoiUjHE",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1430",
@@ -306,7 +387,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1rg9XApFUIpjz5yzOZu0s17LttNb-XF--",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 22,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALA1365",
@@ -317,7 +401,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1cmsW4t-nvUM5ROyY93V0ShzWdbAbwSTR",
-      "fuente": "PASILLO"
+      "fuente": "PASILLO",
+      "edad_ingreso": 22,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1511",
@@ -328,7 +415,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=133PfbTke6w5zFc1GDj0qABUVO5JBptwr",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 23,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1615",
@@ -339,7 +429,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1hNFwuGEGP-RVQtMDm77UNxZ632PJ9Ga4",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "RPR0153",
@@ -350,7 +443,10 @@
       "actividad": "ROPA",
       "dia": "MARTES",
       "drive": "https://drive.google.com/open?id=1kPfJnkPxd0iKVXQkh9tAUEUkuTK-uact",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 23,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1714",
@@ -361,7 +457,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1OwT5s2skQUiSTXQGXFlC4tPxh-SQIary",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 19,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1869",
@@ -372,7 +471,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1ememxOdAuvoH7cneJygUl3m7CCiUI3DK",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR1941",
@@ -383,7 +485,10 @@
       "actividad": "ALIMENTOS",
       "dia": "LUNES",
       "drive": "https://drive.google.com/open?id=1vkbDYGj1wPJ3FeSYH4M1t1D42J1IPHjH",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR2097",
@@ -394,7 +499,10 @@
       "actividad": "ALIMENTOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1lwpruRZydohariE4seHVz_QH7C65FMCG",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 20,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "ALR2116",
@@ -405,7 +513,10 @@
       "actividad": "ALIMENTOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1kejc9JCmXRD4pVNMP3lk8FZVs_aytMwe",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 19,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "AR0293",
@@ -416,7 +527,10 @@
       "actividad": "ACCESORIOS",
       "dia": "VIERNES",
       "drive": "https://drive.google.com/open?id=1k5ZC-3EENGg9H7rEN7bZgV7RnGAWwZlF",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 22,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "AR0311",
@@ -427,7 +541,10 @@
       "actividad": "ACCESORIOS",
       "dia": "JUEVES",
       "drive": "https://drive.google.com/open?id=1TgT1O1nu9q4YRzp4jZBpwMfWc4aGPpa9",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 25,
+      "email": "",
+      "equipo": ""
     },
     {
       "codigo": "AR0451",
@@ -438,7 +555,10 @@
       "actividad": "ACCESORIOS",
       "dia": "MIERCOLES",
       "drive": "https://drive.google.com/open?id=1Fct5PT0gFzImh5y36X4_ZfvwwDrK7YZ6",
-      "fuente": "EXTERNOS"
+      "fuente": "EXTERNOS",
+      "edad_ingreso": 21,
+      "email": "",
+      "equipo": ""
     }
   ],
   "invalidos_pasillo": [
