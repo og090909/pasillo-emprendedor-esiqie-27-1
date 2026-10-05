@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasillo Emprendedor 27-1</title>
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0D2B1E; color: #E8EDE8; min-height: 100vh; padding: 0 1rem 1.5rem; }
+.accent-bar { height: 6px; width: 100%; margin: 0 -1rem 1rem; }
+.container { max-width: 900px; margin: 0 auto; }
+h1 { font-size: 2.2rem; color: #52B788; text-align: center; margin-bottom: 0.2rem; }
+.sub { text-align: center; color: #95D5B2; margin-bottom: 1.5rem; font-size: 1.02rem; }
+.card { background: #1B4332; border: 1px solid #2D6A4F; border-radius: 12px; padding: 1.5rem; }
+footer { text-align: center; color: #95D5B2; padding: 1.5rem 0 0; font-size: 0.83rem; }
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.75); display: none; align-items: center; justify-content: center; z-index: 100; }
+.modal-backdrop.open { display: flex; }
+.modal { background: #1B4332; border-radius: 16px; padding: 1.8rem; max-width: 500px; width: 92%; border: 2px solid #52B788; max-height: 92vh; overflow-y: auto; transition: border-color .3s; }
+.modal h2 { color: #52B788; font-size: 1.35rem; margin: 0 0 0.3rem; transition: color .3s; }
+.modal .id { color: #B7E4C7; font-size: 0.85rem; margin-bottom: 0.8rem; }
+.modal h3 { color: #95D5B2; font-size: 0.85rem; margin: 0.9rem 0 0.4rem; letter-spacing: 0.05em; }
+.modal .row { display: flex; justify-content: space-between; padding: 0.35rem 0; border-bottom: 1px solid #2D6A4F; }
+.modal .row .label { color: #95D5B2; font-size: 0.85rem; }
+.modal .row .value { color: #E8EDE8; font-size: 0.85rem; font-weight: 500; text-align: right; }
+.modal .sensitive { background: #2D1B1B; padding: 0.8rem; border-radius: 8px; margin-top: 0.3rem; }
+.modal .sensitive.locked { color: #95D5B2; font-style: italic; }
+.btn { background: #52B788; color: #0D2B1E; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.9rem; }
+.btn:hover { background: #74C69D; }
+.modal .close { background: transparent; color: #95D5B2; border: 1px solid #2D6A4F; padding: 0.35rem 0.75rem; border-radius: 6px; cursor: pointer; float: right; font-size: 0.8rem; }
+input.password { background: #0D2B1E; border: 1px solid #2D6A4F; color: white; padding: 0.5rem; border-radius: 6px; width: 100%; margin: 0.5rem 0; box-sizing: border-box; }
+.lock-icon { margin-right: 0.4rem; }
+.qr-link { display: inline-block; margin-top: 0.7rem; padding: 0.4rem 0.9rem; background: #2D6A4F; color: #B7E4C7; border-radius: 6px; text-decoration: none; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+  <div class="accent-bar" id="accent-bar" style="background:#2E7D32"></div>
+  <div class="container">
+    <h1>Pasillo Emprendedor 27-1</h1>
+    <p class="sub">IPN &middot; ESIQIE &middot; Septiembre 2026 &middot; <span style="color:#2E7D32;font-weight:700">ALIMENTOS</span></p>
+    <div class="card"><p style="text-align:center">Cargando informacion del emprendedor...</p></div>
+    <footer>Pasillo Emprendedor 27-1 &middot; Boleta y escuela protegidas con codigo de acceso</footer>
+  </div>
+
+  <div class="modal-backdrop">
+    <div class="modal">
+      <button class="close" onclick="closeModal()">Cerrar</button>
+      <h2 id="modal-title">Cargando...</h2>
+      <div class="id" id="modal-id"></div>
+      <h3>IDENTIDAD</h3>
+      <div class="row"><span class="label">Boleta:</span><span class="value" id="m-boleta"></span></div>
+      <div class="row"><span class="label">Escuela:</span><span class="value" id="m-escuela"></span></div>
+      <h3>PASILLO</h3>
+      <div class="row"><span class="label">Actividad:</span><span class="value" id="m-actividad"></span></div>
+      <div class="row"><span class="label">Dia:</span><span class="value" id="m-dia"></span></div>
+      <div class="row"><span class="label">Fuente:</span><span class="value" id="m-fuente"></span></div>
+      <h3>DATOS SENSIBLES</h3>
+      <div class="sensitive locked" id="sensitive-zone">
+        <span class="lock-icon">&#128274;</span> La boleta completa y la escuela requieren el codigo de acceso.
+      </div>
+      <div>
+        <input type="password" id="pwd-input" class="password" placeholder="Codigo de acceso" />
+        <button class="btn" onclick="tryUnlock()" style="width:100%">Desbloquear</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+const PASSWORD = '0808';
+const ACTIVITY_COLOR = '#2E7D32';
+let DATA = null;
+let EMBEDDED_ID = 'ALR3343';
+let currentParticipant = null;
+
+async function loadData() {
+  try {
+    const res = await fetch('https://og090909.github.io/pasillo-emprendedor-esiqie-27-1/participantes.json');
+    const raw = await res.json();
+    DATA = raw.gafetes || [];
+    const found = DATA.find(x => x.codigo === EMBEDDED_ID);
+    if (found) setTimeout(function(){ openModal(found.codigo); }, 60);
+  } catch (err) { console.error('Error:', err); }
+}
+
+function openModal(codigo) {
+  const p = DATA.find(x => x.codigo === codigo);
+  if (!p) return;
+  currentParticipant = p;
+  const col = ACTIVITY_COLOR;
+  const bar = document.getElementById('accent-bar');
+  if (bar) bar.style.background = col;
+  const m = document.querySelector('.modal');
+  if (m) m.style.borderColor = col;
+  const t = document.getElementById('modal-title');
+  if (t) t.style.color = col;
+
+  document.getElementById('modal-title').textContent = p.nombre;
+  document.getElementById('modal-id').textContent = p.codigo + ' · ' + p.rol;
+  document.getElementById('m-boleta').textContent = p.boleta_publica || '••••';
+  document.getElementById('m-escuela').textContent = '••••';
+  document.getElementById('m-actividad').textContent = p.actividad;
+  document.getElementById('m-dia').textContent = p.dia || 'SIN DEFINIR';
+  document.getElementById('m-fuente').textContent = p.fuente;
+  const sz = document.getElementById('sensitive-zone');
+  sz.className = 'sensitive locked';
+  sz.innerHTML = '<span class="lock-icon">&#128274;</span> La boleta completa y la escuela requieren el código de acceso.';
+  document.getElementById('pwd-input').value = '';
+  document.querySelector('.modal-backdrop').classList.add('open');
+}
+
+function closeModal() {
+  document.querySelector('.modal-backdrop').classList.remove('open');
+  currentParticipant = null;
+}
+
+function tryUnlock() {
+  if (document.getElementById('pwd-input').value === PASSWORD) {
+    const p = currentParticipant;
+    document.getElementById('m-boleta').textContent = p.boleta;
+    document.getElementById('m-escuela').textContent = p.escuela;
+    const sz = document.getElementById('sensitive-zone');
+    sz.className = 'sensitive';
+    let html = '<strong>OK Acceso concedido</strong><br><br>';
+    if (p.drive) html += '<a href="'+p.drive+'" target="_blank" class="qr-link">&#128196; Abrir Tira SAES (Drive)</a>';
+    else html += '<em style="color:#95D5B2">Este registro no tiene tira SAES (registro sin Forms).</em>';
+    sz.innerHTML = html;
+  } else { alert('Codigo incorrecto'); }
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.querySelector('.modal-backdrop').addEventListener('click', e => {
+  if (e.target.classList.contains('modal-backdrop')) closeModal();
+});
+document.addEventListener('DOMContentLoaded', function(){ loadData(); });
+</script>
+</body>
+</html>

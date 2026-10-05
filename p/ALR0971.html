@@ -35,12 +35,10 @@ input.password { background: #0D2B1E; border: 1px solid #2D6A4F; color: white; p
 <body>
   <div class="accent-bar" id="accent-bar" style="background:#2E7D32"></div>
   <div class="container">
-    <h1>🌱 Pasillo Emprendedor 27-1</h1>
-    <p class="sub">IPN · ESIQIE · Septiembre 2026 · <span id="act-name" style="color:#2E7D32;font-weight:700">ALIMENTOS</span></p>
-    <div class="card">
-      <p style="text-align:center">Cargando información del emprendedor…</p>
-    </div>
-    <footer>Pasillo Emprendedor 27-1 · Boleta y escuela protegidas con código de acceso</footer>
+    <h1>Pasillo Emprendedor 27-1</h1>
+    <p class="sub">IPN &middot; ESIQIE &middot; Septiembre 2026 &middot; <span style="color:#2E7D32;font-weight:700">ALIMENTOS</span></p>
+    <div class="card"><p style="text-align:center">Cargando informacion del emprendedor...</p></div>
+    <footer>Pasillo Emprendedor 27-1 &middot; Boleta y escuela protegidas con codigo de acceso</footer>
   </div>
 
   <div class="modal-backdrop">
@@ -53,14 +51,14 @@ input.password { background: #0D2B1E; border: 1px solid #2D6A4F; color: white; p
       <div class="row"><span class="label">Escuela:</span><span class="value" id="m-escuela"></span></div>
       <h3>PASILLO</h3>
       <div class="row"><span class="label">Actividad:</span><span class="value" id="m-actividad"></span></div>
-      <div class="row"><span class="label">Día:</span><span class="value" id="m-dia"></span></div>
+      <div class="row"><span class="label">Dia:</span><span class="value" id="m-dia"></span></div>
       <div class="row"><span class="label">Fuente:</span><span class="value" id="m-fuente"></span></div>
       <h3>DATOS SENSIBLES</h3>
       <div class="sensitive locked" id="sensitive-zone">
-        <span class="lock-icon">🔒</span> La boleta completa y la escuela requieren el código de acceso.
+        <span class="lock-icon">&#128274;</span> La boleta completa y la escuela requieren el codigo de acceso.
       </div>
       <div>
-        <input type="password" id="pwd-input" class="password" placeholder="Código de acceso" />
+        <input type="password" id="pwd-input" class="password" placeholder="Codigo de acceso" />
         <button class="btn" onclick="tryUnlock()" style="width:100%">Desbloquear</button>
       </div>
     </div>
@@ -69,7 +67,6 @@ input.password { background: #0D2B1E; border: 1px solid #2D6A4F; color: white; p
   <script>
 const PASSWORD = '0808';
 const ACTIVITY_COLOR = '#2E7D32';
-const ACTIVITY_NAME = 'ALIMENTOS';
 let DATA = null;
 let EMBEDDED_ID = 'ALR0971';
 let currentParticipant = null;
@@ -80,10 +77,8 @@ async function loadData() {
     const raw = await res.json();
     DATA = raw.gafetes || [];
     const found = DATA.find(x => x.codigo === EMBEDDED_ID);
-    if (found) {
-      setTimeout(function() { openModal(found.codigo); }, 60);
-    }
-  } catch (err) { console.error('Error cargando datos:', err); }
+    if (found) setTimeout(function(){ openModal(found.codigo); }, 60);
+  } catch (err) { console.error('Error:', err); }
 }
 
 function openModal(codigo) {
@@ -91,27 +86,23 @@ function openModal(codigo) {
   if (!p) return;
   currentParticipant = p;
   const col = ACTIVITY_COLOR;
-
-  // Barra superior (color de la actividad)
   const bar = document.getElementById('accent-bar');
   if (bar) bar.style.background = col;
-
-  // Modal: borde y titulo del color
-  const modalEl = document.querySelector('.modal');
-  if (modalEl) modalEl.style.borderColor = col;
-  const titleEl = document.getElementById('modal-title');
-  if (titleEl) titleEl.style.color = col;
+  const m = document.querySelector('.modal');
+  if (m) m.style.borderColor = col;
+  const t = document.getElementById('modal-title');
+  if (t) t.style.color = col;
 
   document.getElementById('modal-title').textContent = p.nombre;
   document.getElementById('modal-id').textContent = p.codigo + ' · ' + p.rol;
   document.getElementById('m-boleta').textContent = p.boleta_publica || '••••';
   document.getElementById('m-escuela').textContent = '••••';
   document.getElementById('m-actividad').textContent = p.actividad;
-  document.getElementById('m-dia').textContent = p.dia;
-  document.getElementById('m-fuente').textContent = p.fuente || '';
+  document.getElementById('m-dia').textContent = p.dia || 'SIN DEFINIR';
+  document.getElementById('m-fuente').textContent = p.fuente;
   const sz = document.getElementById('sensitive-zone');
   sz.className = 'sensitive locked';
-  sz.innerHTML = '<span class="lock-icon">🔒</span> La boleta completa y la escuela requieren el código de acceso.';
+  sz.innerHTML = '<span class="lock-icon">&#128274;</span> La boleta completa y la escuela requieren el código de acceso.';
   document.getElementById('pwd-input').value = '';
   document.querySelector('.modal-backdrop').classList.add('open');
 }
@@ -122,27 +113,24 @@ function closeModal() {
 }
 
 function tryUnlock() {
-  const input = document.getElementById('pwd-input').value;
-  if (input === PASSWORD) {
+  if (document.getElementById('pwd-input').value === PASSWORD) {
     const p = currentParticipant;
     document.getElementById('m-boleta').textContent = p.boleta;
     document.getElementById('m-escuela').textContent = p.escuela;
     const sz = document.getElementById('sensitive-zone');
     sz.className = 'sensitive';
-    let html = '<strong>✅ Acceso concedido</strong><br><br>';
-    if (p.drive) html += '<a href="' + p.drive + '" target="_blank" class="qr-link">📄 Abrir Tira SAES (Drive)</a>';
+    let html = '<strong>OK Acceso concedido</strong><br><br>';
+    if (p.drive) html += '<a href="'+p.drive+'" target="_blank" class="qr-link">&#128196; Abrir Tira SAES (Drive)</a>';
+    else html += '<em style="color:#95D5B2">Este registro no tiene tira SAES (registro sin Forms).</em>';
     sz.innerHTML = html;
-  } else {
-    alert('Código incorrecto');
-  }
+  } else { alert('Codigo incorrecto'); }
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 document.querySelector('.modal-backdrop').addEventListener('click', e => {
   if (e.target.classList.contains('modal-backdrop')) closeModal();
 });
-
-document.addEventListener('DOMContentLoaded', function() { loadData(); });
+document.addEventListener('DOMContentLoaded', function(){ loadData(); });
 </script>
 </body>
 </html>
